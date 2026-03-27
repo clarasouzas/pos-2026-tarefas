@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE cardapio SYSTEM "definicoes.dtd">
+
+<cardapio>
+
+    <prato id="P01">
+        <nome>Feijoada</nome>
+        <descricao>Prato brasileiro com feijão e carnes.</descricao>
+        <ingredientes>
+            <ingrediente>Feijão</ingrediente>
+            <ingrediente>Carne</ingrediente>
+        </ingredientes>
+        <preco moeda="BRL">&reais; 25.00</preco>
+        <calorias>800</calorias>
+        <tempoPreparo>90 min</tempoPreparo>          
+    </prato>
+
+    <prato id="P02">
+        <nome>Hambúrguer</nome>
+        <descricao>Pão, carne e queijo.</descricao>
+        <ingredientes>
+            <ingrediente>Pão</ingrediente>
+            <ingrediente>Carne</ingrediente>
+        </ingredientes>
+        <preco moeda="USD">10.00</preco>
+        <calorias>600</calorias>
+        <tempoPreparo>20 min</tempoPreparo>          
+    </prato>
+
+</cardapio>
