@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE cardapio SYSTEM "definicoes.dtd">
-
 <cardapio>
 
     <prato id="P01">
@@ -21,10 +20,50 @@
         <ingredientes>
             <ingrediente>Pão</ingrediente>
             <ingrediente>Carne</ingrediente>
+            <ingrediente>Queijo</ingrediente>
         </ingredientes>
         <preco moeda="USD">10.00</preco>
         <calorias>600</calorias>
         <tempoPreparo>20 min</tempoPreparo>          
+    </prato>
+
+    <prato id="P03">
+        <nome>Pizza</nome>
+        <descricao>Pizza de queijo com molho de tomate.</descricao>
+        <ingredientes>
+            <ingrediente>Massa</ingrediente>
+            <ingrediente>Queijo</ingrediente>
+            <ingrediente>Molho de tomate</ingrediente>
+        </ingredientes>
+        <preco moeda="USD">15.00</preco>
+        <calorias>700</calorias>
+        <tempoPreparo>30 min</tempoPreparo>          
+    </prato>
+
+    <prato id="P04">
+        <nome>Salada</nome>
+        <descricao>Salada fresca com vegetais.</descricao>
+        <ingredientes>
+            <ingrediente>Alface</ingrediente>
+            <ingrediente>Tomate</ingrediente>
+            <ingrediente>Cenoura</ingrediente>
+        </ingredientes>
+        <preco moeda="BRL">&reais; 18.00</preco>
+        <calorias>200</calorias>
+        <tempoPreparo>10 min</tempoPreparo>          
+    </prato>
+
+    <prato id="P05">
+        <nome>Lasanha</nome>
+        <descricao>Lasanha à bolonhesa com queijo.</descricao>
+        <ingredientes>
+            <ingrediente>Massa</ingrediente>
+            <ingrediente>Carne moída</ingrediente>
+            <ingrediente>Queijo</ingrediente>
+        </ingredientes>
+        <preco moeda="BRL">&reais; 30.00</preco>
+        <calorias>850</calorias>
+        <tempoPreparo>60 min</tempoPreparo>          
     </prato>
 
 </cardapio>

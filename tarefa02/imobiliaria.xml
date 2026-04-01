@@ -6,6 +6,7 @@
 <!ELEMENT proprietario (nome , (email|telefone)+)>
 <!ELEMENT nome (#PCDATA)>
 <!ELEMENT email (#PCDATA)>
+<!ELEMENT telefone (#PCDATA)>
 <!ELEMENT endereco (rua, bairro, cidade , número?)>
 <!ELEMENT rua (#PCDATA)>
 <!ELEMENT bairro (#PCDATA)>
@@ -16,45 +17,109 @@
 <!ELEMENT numQuartos (#PCDATA)>
 <!ELEMENT numBanheiros (#PCDATA)>
 <!ELEMENT valor (#PCDATA)>
-]>
-<imobiliaria>
+]><imobiliaria>
+
     <imovel>
-        <descricao></descricao>
+        <descricao>Casa ampla com piscina e garagem para 2 carros</descricao>
         <proprietario>
-            <nome></nome>
-            <email></email>
-            <email></email>
+            <nome>João Silva</nome>
+            <telefone>99999-1111</telefone>
+            <telefone>98888-2222</telefone>
+            <email>joao@email.com</email>
         </proprietario>
         <endereco>
-            <rua></rua>
-            <bairro></bairro>
-            <cidade></cidade>
-            <número></número>
+            <rua>Rua das Flores</rua>
+            <bairro>Centro</bairro>
+            <cidade>Natal</cidade>
         </endereco>
         <caracteristicas>
-            <tamanho></tamanho>
-            <numQuartos></numQuartos>
-            <numBanheiros></numBanheiros>
+            <tamanho>200m²</tamanho>
+            <numQuartos>3</numQuartos>
+            <numBanheiros>2</numBanheiros>
         </caracteristicas>
-        <valor></valor>
+        <valor>450000</valor>
     </imovel>
+
     <imovel>
-        <descricao></descricao>
+        <descricao>Apartamento moderno próximo à praia</descricao>
         <proprietario>
-            <nome></nome>
-            <email></email>
+            <nome>Maria Souza</nome>
+            <telefone>97777-3333</telefone>
         </proprietario>
         <endereco>
-            <rua></rua>
-            <bairro></bairro>
-            <cidade></cidade>
-            <número></número>
+            <rua>Avenida Beira Mar</rua>
+            <bairro>Ponta Negra</bairro>
+            <cidade>Natal</cidade>
+            <número>456</número>
         </endereco>
         <caracteristicas>
-            <tamanho></tamanho>
-            <numQuartos></numQuartos>
-            <numBanheiros></numBanheiros>
+            <tamanho>85m²</tamanho>
+            <numQuartos>2</numQuartos>
+            <numBanheiros>1</numBanheiros>
         </caracteristicas>
-        <valor></valor>
+        <valor>320000</valor>
     </imovel>
+
+    <imovel>
+        <descricao>Casa simples em bairro tranquilo</descricao>
+        <proprietario>
+            <nome>Carlos Mendes</nome>
+            <email>carlos@email.com</email>
+        </proprietario>
+        <endereco>
+            <rua>Rua das Acácias</rua>
+            <bairro>Zona Norte</bairro>
+            <cidade>Natal</cidade>
+            <número>78</número>
+        </endereco>
+        <caracteristicas>
+            <tamanho>120m²</tamanho>
+            <numQuartos>2</numQuartos>
+            <numBanheiros>1</numBanheiros>
+        </caracteristicas>
+        <valor>180000</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Apartamento compacto no centro</descricao>
+        <proprietario>
+            <nome>Fernanda Lima</nome>
+            <telefone>96666-4444</telefone>
+            <email>fernanda@email.com</email>
+        </proprietario>
+        <endereco>
+            <rua>Rua João Pessoa</rua>
+            <bairro>Centro</bairro>
+            <cidade>Natal</cidade>
+            <número>210</número>
+        </endereco>
+        <caracteristicas>
+            <tamanho>60m²</tamanho>
+            <numQuartos>1</numQuartos>
+            <numBanheiros>1</numBanheiros>
+        </caracteristicas>
+        <valor>150000</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Casa de luxo com vista para o mar</descricao>
+        <proprietario>
+            <nome>Ricardo Alves</nome>
+            <telefone>95555-5555</telefone>
+            <telefone>94444-6666</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Avenida Oceânica</rua>
+            <bairro>Via Costeira</bairro>
+            <cidade>Natal</cidade>
+            <número>999</número>
+        </endereco>
+        <caracteristicas>
+            <tamanho>350m²</tamanho>
+            <numQuartos>5</numQuartos>
+            <numBanheiros>4</numBanheiros>
+        </caracteristicas>
+        <valor>1200000</valor>
+    </imovel>
+
 </imobiliaria>
