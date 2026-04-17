@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cardapio xmlns="http://cardapio.org" 
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://cardapio.org 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://cardapio.org 
                            cardapio.xsd">
-<prato id="P01">
+<prato idPrato ="01">
         <nome>Feijoada</nome>
         <descricao>Prato brasileiro com feijão e carnes.</descricao>
         <ingredientes>
             <ingrediente>Feijão</ingrediente>
             <ingrediente>Carne</ingrediente>
         </ingredientes>
-        <preco moeda="BRL">&reais; 25.00</preco>
+        <preco> 25.220</preco>
         <calorias>800</calorias>
         <tempoPreparo>90 min</tempoPreparo>          
     </prato>
 
-    <prato id="P02">
+    <prato idPrato="02">
         <nome>Hambúrguer</nome>
         <descricao>Pão, carne e queijo.</descricao>
         <ingredientes>
@@ -23,12 +23,12 @@
             <ingrediente>Carne</ingrediente>
             <ingrediente>Queijo</ingrediente>
         </ingredientes>
-        <preco moeda="USD">10.00</preco>
+        <preco> 10.00</preco>
         <calorias>600</calorias>
         <tempoPreparo>20 min</tempoPreparo>          
     </prato>
 
-    <prato id="P03">
+    <prato idPrato="03">
         <nome>Pizza</nome>
         <descricao>Pizza de queijo com molho de tomate.</descricao>
         <ingredientes>
@@ -36,12 +36,12 @@
             <ingrediente>Queijo</ingrediente>
             <ingrediente>Molho de tomate</ingrediente>
         </ingredientes>
-        <preco moeda="USD">15.00</preco>
+        <preco >15.22</preco>
         <calorias>700</calorias>
         <tempoPreparo>30 min</tempoPreparo>          
     </prato>
 
-    <prato id="P04">
+    <prato idPrato="04">
         <nome>Salada</nome>
         <descricao>Salada fresca com vegetais.</descricao>
         <ingredientes>
@@ -49,12 +49,12 @@
             <ingrediente>Tomate</ingrediente>
             <ingrediente>Cenoura</ingrediente>
         </ingredientes>
-        <preco moeda="BRL">&reais; 18.00</preco>
+        <preco> 18.00</preco>
         <calorias>200</calorias>
         <tempoPreparo>10 min</tempoPreparo>          
     </prato>
 
-    <prato id="P05">
+    <prato idPrato="05">
         <nome>Lasanha</nome>
         <descricao>Lasanha à bolonhesa com queijo.</descricao>
         <ingredientes>
@@ -62,7 +62,7 @@
             <ingrediente>Carne moída</ingrediente>
             <ingrediente>Queijo</ingrediente>
         </ingredientes>
-        <preco moeda="BRL">&reais; 30.00</preco>
+        <preco> 30.00</preco>
         <calorias>850</calorias>
         <tempoPreparo>60 min</tempoPreparo>          
     </prato>
