@@ -1,0 +1,61 @@
+{
+  "cardapio": {
+    "prato": [
+      {
+        "idPrato": "01",
+        "nome": "Feijoada",
+        "descricao": "Prato brasileiro com feijão e carnes.",
+        "ingredientes": {
+          "ingrediente": ["Feijão", "Carne"]
+        },
+        "preco": 25.22,
+        "calorias": 800,
+        "tempoPreparo": "90 min"
+      },
+      {
+        "idPrato": "02",
+        "nome": "Hambúrguer",
+        "descricao": "Pão, carne e queijo.",
+        "ingredientes": {
+          "ingrediente": ["Pão", "Carne", "Queijo"]
+        },
+        "preco": 10.0,
+        "calorias": 600,
+        "tempoPreparo": "20 min"
+      },
+      {
+        "idPrato": "03",
+        "nome": "Pizza",
+        "descricao": "Pizza de queijo com molho de tomate.",
+        "ingredientes": {
+          "ingrediente": ["Massa", "Queijo", "Molho de tomate"]
+        },
+        "preco": 15.22,
+        "calorias": 700,
+        "tempoPreparo": "30 min"
+      },
+      {
+        "idPrato": "04",
+        "nome": "Salada",
+        "descricao": "Salada fresca com vegetais.",
+        "ingredientes": {
+          "ingrediente": ["Alface", "Tomate", "Cenoura"]
+        },
+        "preco": 18.0,
+        "calorias": 200,
+        "tempoPreparo": "10 min"
+      },
+      {
+        "idPrato": "05",
+        "nome": "Lasanha",
+        "descricao": "Lasanha à bolonhesa com queijo.",
+        "ingredientes": {
+          "ingrediente": ["Massa", "Carne moída", "Queijo"]
+        },
+        "preco": 30.0,
+        "calorias": 850,
+        "tempoPreparo": "60 min"
+      }
+    ]
+  }
+}

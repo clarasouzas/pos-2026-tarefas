@@ -1,0 +1,76 @@
+{
+  "quiz": {
+    "versao": "1.0",
+    "disciplina": "Informática",
+    "professor": {
+      "nome": "Ana Pereira",
+      "matrícula": "123456"
+    },
+    "turma": "2º Ano B",
+    "data": "2026-04-01",
+    "questões": {
+      "questão": [
+        {
+          "enunciado": "O que significa XML?",
+          "pontuação": "2",
+          "alternativas": {
+            "alternativa": [
+              { "texto": "Extra Modern Language", "correta": "nao" },
+              { "texto": "eXtensible Markup Language", "correta": "sim" },
+              { "texto": "Example Markup Language", "correta": "nao" },
+              { "texto": "Extended Machine Language", "correta": "nao" }
+            ]
+          }
+        },
+        {
+          "enunciado": "Qual a função principal do XML?",
+          "pontuação": "2",
+          "alternativas": {
+            "alternativa": [
+              { "texto": "Executar programas", "correta": "nao" },
+              { "texto": "Armazenar e transportar dados", "correta": "sim" },
+              { "texto": "Criar interfaces gráficas", "correta": "nao" },
+              { "texto": "Compilar código", "correta": "nao" }
+            ]
+          }
+        },
+        {
+          "enunciado": "O que é um DTD?",
+          "pontuação": "2",
+          "alternativas": {
+            "alternativa": [
+              { "texto": "Um banco de dados", "correta": "nao" },
+              { "texto": "Um definidor de estrutura para XML", "correta": "sim" },
+              { "texto": "Uma linguagem de programação", "correta": "nao" },
+              { "texto": "Um editor de texto", "correta": "nao" }
+            ]
+          }
+        },
+        {
+          "enunciado": "Qual destas é uma característica do XML?",
+          "pontuação": "2",
+          "alternativas": {
+            "alternativa": [
+              { "texto": "Tags fixas como HTML", "correta": "nao" },
+              { "texto": "Permite criar tags personalizadas", "correta": "sim" },
+              { "texto": "Não suporta hierarquia", "correta": "nao" },
+              { "texto": "É usado apenas para design", "correta": "nao" }
+            ]
+          }
+        },
+        {
+          "enunciado": "Qual atributo indica a alternativa correta?",
+          "pontuação": "2",
+          "alternativas": {
+            "alternativa": [
+              { "texto": "correta", "correta": "sim" },
+              { "texto": "resposta", "correta": "nao" },
+              { "texto": "valor", "correta": "nao" },
+              { "texto": "tipo", "correta": "nao" }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

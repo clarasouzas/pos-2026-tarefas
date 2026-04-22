@@ -17,7 +17,7 @@
             <cidade>Natal</cidade>
         </endereco>
         <caracteristicas>
-            <tamanho>200m²</tamanho>
+            <tamanho>200</tamanho>
             <numQuartos>3</numQuartos>
             <numBanheiros>2</numBanheiros>
         </caracteristicas>
@@ -37,7 +37,7 @@
             <número>456</número>
         </endereco>
         <caracteristicas>
-            <tamanho>85m²</tamanho>
+            <tamanho>85</tamanho>
             <numQuartos>2</numQuartos>
             <numBanheiros>1</numBanheiros>
         </caracteristicas>
@@ -57,7 +57,7 @@
             <número>78</número>
         </endereco>
         <caracteristicas>
-            <tamanho>120m²</tamanho>
+            <tamanho>120</tamanho>
             <numQuartos>2</numQuartos>
             <numBanheiros>1</numBanheiros>
         </caracteristicas>
@@ -78,7 +78,7 @@
             <número>210</número>
         </endereco>
         <caracteristicas>
-            <tamanho>60m²</tamanho>
+            <tamanho>60</tamanho>
             <numQuartos>1</numQuartos>
             <numBanheiros>1</numBanheiros>
         </caracteristicas>
@@ -99,7 +99,7 @@
             <número>999</número>
         </endereco>
         <caracteristicas>
-            <tamanho>350m²</tamanho>
+            <tamanho>350</tamanho>
             <numQuartos>5</numQuartos>
             <numBanheiros>4</numBanheiros>
         </caracteristicas>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quiz xmlns="http://quiz.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://quiz.org quiz.xsd"
+      versao="1.0">
+    <disciplina>Informática</disciplina>
+    
+    <professor>
+        <nome>Ana Pereira</nome>
+        <matrícula>123456</matrícula>
+    </professor>
+    
+    <turma>2º Ano B</turma>
+    <data>2026-04-01</data>
+    
+    <questões>
+        
+        <questão>
+            <enunciado>O que significa XML?</enunciado>
+            <pontuação>2</pontuação>
+            <alternativas>
+                <alternativa correta="nao">Extra Modern Language</alternativa>
+                <alternativa correta="sim">eXtensible Markup Language</alternativa>
+                <alternativa correta="nao">Example Markup Language</alternativa>
+                <alternativa correta="nao">Extended Machine Language</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>Qual a função principal do XML?</enunciado>
+            <pontuação>2</pontuação>
+            <alternativas>
+                <alternativa correta="nao">Executar programas</alternativa>
+                <alternativa correta="sim">Armazenar e transportar dados</alternativa>
+                <alternativa correta="nao">Criar interfaces gráficas</alternativa>
+                <alternativa correta="nao">Compilar código</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>O que é um DTD?</enunciado>
+            <pontuação>2</pontuação>
+            <alternativas>
+                <alternativa correta="nao">Um banco de dados</alternativa>
+                <alternativa correta="sim">Um definidor de estrutura para XML</alternativa>
+                <alternativa correta="nao">Uma linguagem de programação</alternativa>
+                <alternativa correta="nao">Um editor de texto</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>Qual destas é uma característica do XML?</enunciado>
+            <pontuação>2</pontuação>
+            <alternativas>
+                <alternativa correta="nao">Tags fixas como HTML</alternativa>
+                <alternativa correta="sim">Permite criar tags personalizadas</alternativa>
+                <alternativa correta="nao">Não suporta hierarquia</alternativa>
+                <alternativa correta="nao">É usado apenas para design</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>Qual atributo indica a alternativa correta?</enunciado>
+            <pontuação>2</pontuação>
+            <alternativas>
+                <alternativa correta="sim">correta</alternativa>
+                <alternativa correta="nao">resposta</alternativa>
+                <alternativa correta="nao">valor</alternativa>
+                <alternativa correta="nao">tipo</alternativa>
+            </alternativas>
+        </questão>
+
+    </questões>
+</quiz>
