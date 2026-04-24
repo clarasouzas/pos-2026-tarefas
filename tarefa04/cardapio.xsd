@@ -4,7 +4,7 @@
     targetNamespace="http://cardapio.org"
     elementFormDefault="qualified">
     
-    <simpleType name="dinheiroType">
+    <simpleType name="precoType">
         <restriction base="decimal">
             <fractionDigits value="2"/>
         </restriction>
@@ -14,7 +14,7 @@
 
     <element name="descricao" type="string"/>
 
-    <element name="preco" type="p:dinheiroType"/>
+    <element name="preco" type="p:precoType"/>
 
     <element name="tempoPreparo" type="string"/>
 
@@ -41,7 +41,7 @@
                 <element ref="p:calorias"/>
                 <element ref="p:tempoPreparo"/>
             </sequence>
-            <attribute name="idPrato" type="integer"/>
+            <attribute name="id" type="integer"/>
         </complexType>
     </element>
     

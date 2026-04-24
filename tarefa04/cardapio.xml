@@ -2,7 +2,7 @@
 <cardapio xmlns="http://cardapio.org" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://cardapio.org cardapio.xsd">
-<prato idPrato ="01">
+<prato id ="01">
         <nome>Feijoada</nome>
         <descricao>Prato brasileiro com feijão e carnes.</descricao>
         <ingredientes>
@@ -14,7 +14,7 @@
         <tempoPreparo>90 min</tempoPreparo>          
     </prato>
 
-    <prato idPrato="02">
+    <prato id="02">
         <nome>Hambúrguer</nome>
         <descricao>Pão, carne e queijo.</descricao>
         <ingredientes>
@@ -27,7 +27,7 @@
         <tempoPreparo>20 min</tempoPreparo>          
     </prato>
 
-    <prato idPrato="03">
+    <prato id="03">
         <nome>Pizza</nome>
         <descricao>Pizza de queijo com molho de tomate.</descricao>
         <ingredientes>
@@ -40,7 +40,7 @@
         <tempoPreparo>30 min</tempoPreparo>          
     </prato>
 
-    <prato idPrato="04">
+    <prato id="04">
         <nome>Salada</nome>
         <descricao>Salada fresca com vegetais.</descricao>
         <ingredientes>
@@ -53,7 +53,7 @@
         <tempoPreparo>10 min</tempoPreparo>          
     </prato>
 
-    <prato idPrato="05">
+    <prato id="05">
         <nome>Lasanha</nome>
         <descricao>Lasanha à bolonhesa com queijo.</descricao>
         <ingredientes>

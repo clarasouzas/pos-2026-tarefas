@@ -2,7 +2,7 @@
   "cardapio": {
     "prato": [
       {
-        "idPrato": "01",
+        "id": "01",
         "nome": "Feijoada",
         "descricao": "Prato brasileiro com feijão e carnes.",
         "ingredientes": {
@@ -13,7 +13,7 @@
         "tempoPreparo": "90 min"
       },
       {
-        "idPrato": "02",
+        "id": "02",
         "nome": "Hambúrguer",
         "descricao": "Pão, carne e queijo.",
         "ingredientes": {
@@ -24,7 +24,7 @@
         "tempoPreparo": "20 min"
       },
       {
-        "idPrato": "03",
+        "id": "03",
         "nome": "Pizza",
         "descricao": "Pizza de queijo com molho de tomate.",
         "ingredientes": {
@@ -35,7 +35,7 @@
         "tempoPreparo": "30 min"
       },
       {
-        "idPrato": "04",
+        "id": "04",
         "nome": "Salada",
         "descricao": "Salada fresca com vegetais.",
         "ingredientes": {
@@ -46,7 +46,7 @@
         "tempoPreparo": "10 min"
       },
       {
-        "idPrato": "05",
+        "id": "05",
         "nome": "Lasanha",
         "descricao": "Lasanha à bolonhesa com queijo.",
         "ingredientes": {
