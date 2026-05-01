@@ -1,38 +1,35 @@
 from xml.dom.minidom import parse
 
-dom = parse("cardapio.xml")
+dom = parse("tarefa08/cardapio.xml")
 
 cardapio = dom.documentElement
 
-pratos = cardapio.getElementsByTagName('prato')
+pratos = cardapio.getElementsByTagName("prato")
 
-id_prato = 0
+print("----Menu----")
+for prato in pratos:
+    id = prato.getAttribute("id")
+    nome = prato.getElementsByTagName("nome")[0].firstChild.nodeValue
+    print(id, "-", nome)
+
+opcao = input("Digite o id do prato para saber mais: ")
 
 for prato in pratos:
-    id_prato += 1
-    nome = prato.getAttribute('nome')
-    print(f'{id_prato} - {nome}')
- 
-    
+    if opcao == prato.getAttribute("id"):
+        nome = prato.getElementsByTagName("nome")[0].firstChild.nodeValue
+        descricao = prato.getElementsByTagName("descricao")[0].firstChild.nodeValue
+        preco = prato.getElementsByTagName("preco")[0].firstChild.nodeValue
+        calorias = prato.getElementsByTagName("calorias")[0].firstChild.nodeValue
+        tempo = prato.getElementsByTagName("tempoPreparo")[0].firstChild.nodeValue
+        ingredientes = prato.getElementsByTagName("ingrediente")
 
-id_lido = int(input("Digite o id do prato para saber mais: "))
-prato = prato[id_lido-1]
-print("---\n")
+        print("\nNome:", nome)
+        print("Descrição:", descricao)
+        print("Ingredientes:")
 
-descricao = prato.getElementsByTagName('descricao')[0].firstChild.nodeValue
-preco = prato.getElementsByTagName('preco')[0].firstChild.nodeValue
-calorias = prato.getElementsByTagName('calorias')[0].firstChild.nodeValue
-tempoPreparo = prato.getElementsByTagName('tempoPreparo')[0].firstChild.nodeValue
-ingredientes = prato.getElementsByTagName('ingredientes')[0].firstChild.nodeValue
-for ingrediente in ingredientes:
-    ingrediente = prato.ingredientes.getElementsByTagName('ingrediente')[0].firstChild.nodeValue
-    print(f'Ingredientes - {ingrediente}')
- 
+        for ingrediente in ingredientes:
+            print(ingrediente.firstChild.nodeValue)
 
-
-print("Descrição:", descricao)
-print("Preço:", preco)
-print("Calorias:", calorias)
-print("Tempo de Preparo:", tempoPreparo)
-
-    
+        print("Preço: R$", preco)
+        print("Calorias:", calorias, "kcal")
+        print("Tempo de preparo:", tempo)

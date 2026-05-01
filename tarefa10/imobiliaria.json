@@ -1,0 +1,108 @@
+{
+    "imobiliaria": {
+        "imovel": [
+            {
+                "descricao": "Casa ampla com piscina e garagem para 2 carros",
+                "proprietario": {
+                    "nome": "João Silva",
+                    "telefone": [
+                        "99999-1111",
+                        "98888-2222"
+                    ],
+                    "email": "joao@email.com"
+                },
+                "endereco": {
+                    "rua": "Rua das Flores",
+                    "bairro": "Centro",
+                    "cidade": "Natal"
+                },
+                "caracteristicas": {
+                    "tamanho": 200,
+                    "numQuartos": 3,
+                    "numBanheiros": 2
+                },
+                "valor": 450000
+            },
+            {
+                "descricao": "Apartamento moderno próximo à praia",
+                "proprietario": {
+                    "nome": "Maria Souza",
+                    "telefone": "97777-3333"
+                },
+                "endereco": {
+                    "rua": "Avenida Beira Mar",
+                    "bairro": "Ponta Negra",
+                    "cidade": "Natal",
+                    "número": 456
+                },
+                "caracteristicas": {
+                    "tamanho": 85,
+                    "numQuartos": 2,
+                    "numBanheiros": 1
+                },
+                "valor": 320000
+            },
+            {
+                "descricao": "Casa simples em bairro tranquilo",
+                "proprietario": {
+                    "nome": "Carlos Mendes",
+                    "email": "carlos@email.com"
+                },
+                "endereco": {
+                    "rua": "Rua das Acácias",
+                    "bairro": "Zona Norte",
+                    "cidade": "Natal",
+                    "número": 78
+                },
+                "caracteristicas": {
+                    "tamanho": 120,
+                    "numQuartos": 2,
+                    "numBanheiros": 1
+                },
+                "valor": 180000
+            },
+            {
+                "descricao": "Apartamento compacto no centro",
+                "proprietario": {
+                    "nome": "Fernanda Lima",
+                    "telefone": "96666-4444",
+                    "email": "fernanda@email.com"
+                },
+                "endereco": {
+                    "rua": "Rua João Pessoa",
+                    "bairro": "Centro",
+                    "cidade": "Natal",
+                    "número": 210
+                },
+                "caracteristicas": {
+                    "tamanho": 60,
+                    "numQuartos": 1,
+                    "numBanheiros": 1
+                },
+                "valor": 150000
+            },
+            {
+                "descricao": "Casa de luxo com vista para o mar",
+                "proprietario": {
+                    "nome": "Ricardo Alves",
+                    "telefone": [
+                        "95555-5555",
+                        "94444-6666"
+                    ]
+                },
+                "endereco": {
+                    "rua": "Avenida Oceânica",
+                    "bairro": "Via Costeira",
+                    "cidade": "Natal",
+                    "número": 999
+                },
+                "caracteristicas": {
+                    "tamanho": 350,
+                    "numQuartos": 5,
+                    "numBanheiros": 4
+                },
+                "valor": 1200000
+            }
+        ]
+    }
+}
