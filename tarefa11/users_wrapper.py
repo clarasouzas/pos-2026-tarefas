@@ -1,6 +1,6 @@
 import requests
 
-API_URL = "http://10.73.14.1:8000"
+API_URL = "https://jsonplaceholder.typicode.com"
 
 def listar():
     response = requests.get(f"{API_URL}/users/")
