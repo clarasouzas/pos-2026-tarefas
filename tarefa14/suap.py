@@ -10,16 +10,23 @@ data = {"username":user,"password":password}
 
 response = requests.post(api_url+"token/pair", json=data)
 token = response.json()["access"]
-print(response.json())
 headers = {
     "Authorization": f'Bearer {token}'
 }
-
-print(headers)
-ano = input("ano: ")
-periodo = input("periodo: ")
+ano = input("Digite o ano: ")
+periodo = input("Digite o período: ")
 response = requests.get(api_url+ f"ensino/meu-boletim/{ano}/{periodo}", headers=headers)
 
 disciplinas = response.json()["results"]
+print("-" * 100)
+print(f'{"Disciplina":<70} | {"N1":^5} | {"N2":^5} | {"N3":^5} | {"N4":^5}')
+print("-" * 100)
 for disciplina in disciplinas:
-    print(f"{disciplina["disciplina"]:<70}{disciplina["nota_etapa_1"]["nota"]} - {disciplina["nota_etapa_2"]["nota"]} - {disciplina["nota_etapa_3"]["nota"]} - {disciplina["nota_etapa_4"]["nota"]}")
+    print(
+        f'{disciplina["disciplina"]:<70} |'
+        f'{str(disciplina["nota_etapa_1"]["nota"]):^5} |'
+        f'{str(disciplina["nota_etapa_2"]["nota"]):^5} |'
+        f'{str(disciplina["nota_etapa_3"]["nota"]):^5} |'
+        f'{str(disciplina["nota_etapa_4"]["nota"]):^5} |'
+    )
+print("-" * 100)
