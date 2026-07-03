@@ -1,0 +1,498 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   Variáveis
+=========================== */
+
+:root{
+
+    --primary:#10B981;
+    --primary-dark:#6366F1;
+    --primary-light:#10B981;
+
+    --background:#f5f7fb;
+    --card:#ffffff;
+    --text:#424242;
+    --text-light:#7b648b;
+
+    --border:#ffffff;
+
+
+}
+
+/* ===========================
+   Geral
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:var(--background);
+    font-family:'Poppins',sans-serif;
+    color:var(--text);
+
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    max-width:1200px;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar{
+
+    background:white !important;
+    padding:18px 0;
+
+}
+
+.navbar-brand{
+
+    color:var(--primary) !important;
+    font-size:1.6rem;
+    font-weight:700;
+
+}
+
+.nav-link{
+
+    color:var(--text) !important;
+    font-weight:500;
+    margin-right:15px;
+
+}
+
+.nav-link:hover{
+
+    color:var(--primary) !important;
+
+}
+
+.user-photo{
+
+    width:48px;
+    height:48px;
+    object-fit:cover;
+    border-radius:50%;
+    border:3px solid var(--primary);
+
+}
+
+.user-name{
+
+    font-weight:600;
+    font-size:.95rem;
+
+}
+
+.user-matricula{
+
+    color:var(--text-light);
+    font-size:.8rem;
+
+}
+
+/* ===========================
+   Botões
+=========================== */
+
+.btn-success{
+
+    background:var(--primary)!important;
+    border:none!important;
+
+    border-radius:12px;
+
+    padding:12px 28px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.btn-success:hover{
+
+    background:var(--primary-dark)!important;
+
+    transform:translateY(-3px);
+
+}
+
+.btn-outline-success{
+
+    border-radius:12px;
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero{
+
+    margin-top:40px;
+
+    background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+
+    color:white;
+
+    border-radius:28px;
+
+    padding:70px;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:400px;
+    height:400px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:50%;
+
+    right:-120px;
+    top:-120px;
+
+}
+
+.hero h1{
+
+    font-size:3.2rem;
+
+    font-weight:700;
+
+}
+
+.hero p{
+
+    margin-top:20px;
+
+    font-size:1.15rem;
+
+    max-width:600px;
+
+    opacity:.95;
+
+}
+
+.hero .btn{
+    color: var(--text);
+    border-radius: 30px;
+    margin-top:35px;
+
+}
+
+.hero img{
+
+    width:100%;
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.card{
+
+    border:none;
+
+    border-radius:24px;
+
+
+    background:var(--card);
+
+}
+
+.card-body{
+
+    padding:30px;
+
+}
+
+/* ===========================
+   Perfil
+=========================== */
+
+.profile-card{
+
+    padding:40px;
+
+}
+
+.profile-avatar{
+
+    width:170px;
+    height:170px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+
+
+}
+
+.profile-name{
+
+    margin-top:25px;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+.profile-course{
+
+    color:var(--text-light);
+
+}
+
+.info-card{
+
+    background:white;
+
+    border-bottom: 3px solid var(--primary);
+
+    height:100%;
+
+}
+
+.info-card h6{
+
+    color:var(--text-light);
+
+    font-size:.9rem;
+
+}
+
+.info-card h5{
+
+    margin-top:8px;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   Página Boletim
+=========================== */
+
+.filter-card{
+
+    margin-bottom:35px;
+
+}
+
+.form-select{
+
+    border-radius:12px;
+
+    padding:12px;
+
+}
+
+.disciplina-card{
+
+    border-radius:22px;
+
+    background:white;
+
+
+    padding:25px;
+
+    height:100%;
+
+    transition:.25s;
+
+}
+
+.disciplina-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.disciplina-card h4{
+
+    font-size:1.15rem;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.nota{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:12px;
+
+    font-size:.95rem;
+
+}
+
+.media{
+
+    margin-top:18px;
+
+    padding-top:15px;
+
+    border-top:1px solid var(--border);
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+/* ===========================
+   Rodapé
+=========================== */
+
+.footer{
+
+    margin-top:80px;
+
+    text-align:center;
+
+    color:var(--text-light);
+
+    font-size:.9rem;
+
+}
+
+/* ===========================
+   Responsivo
+=========================== */
+
+@media(max-width:992px){
+
+.hero{
+
+padding:50px 35px;
+
+text-align:center;
+
+}
+
+
+
+.hero h1{
+
+font-size:1.3rem;
+
+}
+
+.profile-avatar{
+
+width:140px;
+height:140px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding:35px 25px;
+
+}
+
+.hero h1{
+
+font-size:2rem;
+
+}
+
+.profile-name{
+
+font-size:1.5rem;
+
+}
+
+.user-name,
+.user-matricula{
+
+display:none;
+
+}
+
+}
+.table{
+
+    margin-bottom:0;
+
+}
+
+.table thead{
+
+    background:#16a34a;
+    color:white;
+
+}
+
+.table thead th{
+
+    border:none;
+    padding:16px;
+
+}
+
+.table tbody td{
+
+    padding:16px;
+    vertical-align:middle;
+
+}
+
+.table tbody tr{
+
+    transition:.2s;
+
+}
+
+.table tbody tr:hover{
+
+    background:#f0fdf4;
+
+}
+
+.badge{
+
+    padding:8px 14px;
+    border-radius:30px;
+    font-weight:500;
+
+}
+.btn-buttons{
+    border-radius: 30px;
+    background-color: #10B981;
+}

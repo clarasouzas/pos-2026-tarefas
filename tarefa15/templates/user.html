@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card profile-card">
+
+    <div class="row align-items-center">
+
+        <div class="col-lg-4 text-center">
+
+            <img
+                src="{{ user_data['url_foto_150x200'] }}"
+                class="profile-avatar"
+            >
+        </div>
+
+        <div class="col-lg-8">
+
+            <div class="row g-4">
+
+                <div class="col-md-6">
+
+                    <div class="info-card">
+
+                        <h6>Nome </h6>
+
+                        <h5>
+
+                            {{ user_data['vinculo']['nome'] }}
+
+                        </h5>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+
+                    <div class="info-card">
+
+                        <h6>Email Institucional</h6>
+
+                        <h5>
+
+                            {{ user_data['email'] }}
+
+                        </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="info-card">
+
+                        <h6>Matrícula</h6>
+
+                        <h5>
+
+                            {{ user_data['matricula'] }}
+
+                        </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="info-card">
+
+                        <h6>Curso</h6>
+
+                        <h5>
+
+                            {{ user_data['vinculo']['curso'] }}
+
+                        </h5>
+
+                    </div>
+
+                </div>
+
+                
+
+                
+
+            <div class="mt-5">
+
+                <a href="/boletim" class="btn btn-success">
+
+                    <i class="bi bi-journal-bookmark-fill"></i>
+
+                    Ver Boletim
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

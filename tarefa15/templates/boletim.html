@@ -1,0 +1,237 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+
+    <div>
+
+        <h2 class="fw-bold">
+
+            Meu Boletim
+
+        </h2>
+
+        <p class="text-secondary">
+
+            Consulte suas notas do período letivo.
+
+        </p>
+
+    </div>
+
+</div>
+
+<div class="card mb-4">
+
+    <div class="card-body">
+
+        <form class="row align-items-end">
+
+            <div class="col-md-3">
+
+                <label class="form-label">
+
+                    Ano
+
+                </label>
+
+                <select class="form-select" name="ano">
+
+                    {% for a in range(2023,2027) %}
+
+                    <option
+
+                        value="{{a}}"
+
+                        {% if ano|int == a %}
+                        selected
+                        {% endif %}
+
+                    >
+
+                        {{a}}
+
+                    </option>
+
+                    {% endfor %}
+
+                </select>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <button class="btn btn-success w-100">
+
+                    <i class="bi bi-search"></i>
+
+                    Consultar
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<div class="card">
+
+    <div class="card-body">
+
+        <div class="table-responsive">
+
+            <table class="table align-middle table-hover">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Disciplina</th>
+
+                        <th class="text-center">
+
+                            N1
+
+                        </th>
+
+                        <th class="text-center">
+
+                            N2
+
+                        </th>
+
+                        <th class="text-center">
+
+                            N3
+
+                        </th>
+
+                        <th class="text-center">
+
+                            N4
+
+                        </th>
+
+                        <th class="text-center">
+
+                            Média
+
+                        </th>
+
+                        <th class="text-center">
+
+                            Faltas
+
+                        </th>
+
+                        <th class="text-center">
+
+                            Situação
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                {% for disciplina in boletim %}
+
+                    <tr>
+
+                        <td>
+
+                            <strong>
+
+                                {{ disciplina.disciplina }}
+
+                            </strong>
+
+                        </td>
+
+                        <td class="text-center">
+
+                            {{ disciplina.nota_etapa_1.nota or "-" }}
+
+                        </td>
+
+                        <td class="text-center">
+
+                            {{ disciplina.nota_etapa_2.nota or "-" }}
+
+                        </td>
+
+                        <td class="text-center">
+
+                            {{ disciplina.nota_etapa_3.nota or "-" }}
+
+                        </td>
+
+                        <td class="text-center">
+
+                            {{ disciplina.nota_etapa_4.nota or "-" }}
+
+                        </td>
+
+                        <td class="text-center fw-bold text-success">
+
+                            {{ disciplina.media_final_disciplina }}
+
+                        </td>
+
+                        <td class="text-center">
+
+                            {{ disciplina.numero_faltas }}
+
+                        </td>
+
+                        <td class="text-center">
+
+                            {% if disciplina.situacao == "Aprovado" %}
+
+                            <span class="badge bg-success">
+
+                                {{ disciplina.situacao }}
+
+                            </span>
+
+                            {% elif disciplina.situacao == "Reprovado" %}
+
+                            <span class="badge bg-danger">
+
+                                {{ disciplina.situacao }}
+
+                            </span>
+
+                            {% else %}
+
+                            <span class="badge bg-warning text-dark">
+
+                                {{ disciplina.situacao }}
+
+                            </span>
+
+                            {% endif %}
+
+                        </td>
+
+                    </tr>
+
+                {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
