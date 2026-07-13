@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #eef4ff, #f8fbff);
+  min-height: 100vh;
+  padding: 40px;
+  color: #2d3748;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1f3b73;
+}
+
+.titulo i {
+  color: #4f7cff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 30px;
+}
+
+.painel {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+}
+
+.painel h2 {
+  margin-bottom: 25px;
+  color: #304566;
+  font-size: 1.25rem;
+}
+
+.cards-usuarios {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-usuario {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 18px;
+  border-radius: 14px;
+  background: #f7f9fc;
+  cursor: pointer;
+  transition: .25s;
+  border: 2px solid transparent;
+}
+
+.card-usuario:hover {
+  transform: translateY(-3px);
+  background: white;
+  border-color: #4f7cff;
+  box-shadow: 0 10px 20px rgba(79, 124, 255, .18);
+}
+
+.card-usuario.ativo {
+  background: #4f7cff;
+  color: white;
+}
+
+.card-usuario.ativo p,
+.card-usuario.ativo h3 {
+  color: white;
+}
+
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f7cff, #7fa3ff);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.avatar.grande {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+}
+
+.dados h3 {
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+
+.dados p {
+  color: #666;
+  font-size: .85rem;
+  margin-top: 3px;
+}
+
+.info-usuario {
+  margin-bottom: 25px;
+}
+
+.cabecalho-usuario {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.cabecalho-usuario h3 {
+  font-size: 1.4rem;
+  margin-bottom: 3px;
+}
+
+.cabecalho-usuario span {
+  color: #4f7cff;
+  font-size: .9rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.cabecalho-usuario p {
+  color: #666;
+  margin-top: 4px;
+  font-size: .9rem;
+}
+
+.verde span {
+  color: #1ea55b;
+}
+
+.vermelha span {
+  color: #d94d4d;
+}
+
+.lista-tarefas {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.lista-tarefas::-webkit-scrollbar {
+  width: 8px;
+}
+
+.lista-tarefas::-webkit-scrollbar-thumb {
+  background: #cfd7e6;
+  border-radius: 20px;
+}
+
+.card-tarefa {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #f8faff;
+  padding: 15px;
+  border-radius: 12px;
+  transition: .2s;
+}
+
+.card-tarefa:hover {
+  transform: translateX(6px);
+  background: white;
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+}
+
+.card-tarefa p {
+  font-size: .95rem;
+  line-height: 1.4;
+}
+
+.concluida {
+  color: #1ea55b;
+  font-size: 1.4rem;
+}
+
+.pendente {
+  color: #ff9800;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 900px) {
+
+  body {
+    padding: 20px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+
+}
